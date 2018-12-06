@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">s17003_Quiz</string>
+    <string name="title">QuizGame</string>
+    <string name="degree">ジャンル</string>
+    <string name="easy">簡単</string>
+    <string name="difficult">難しい</string>
+    <string name="random">無差別</string>
+    <string name="question">問題</string>
+    <string name="genre1">闇鍋</string>
+    <string name="genre2">スポーツ</string>
+    <string name="genre3">東方</string>
+    <string name="genre4">ポケモン</string>
+    <string name="genre5">サイゲ</string>
+    <string name="genre6">ロボ</string>
+    <string name="genre7">バイク</string>
+    <string name="genre8">音楽</string>
+    <string name="genre9">アイマス</string>
+    <string name="genre10">TWICE</string>
+    <string name="genre11">まいくら</string>
+</resources>
