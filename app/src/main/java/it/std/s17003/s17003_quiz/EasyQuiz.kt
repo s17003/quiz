@@ -15,7 +15,8 @@ class EasyQuiz : AppCompatActivity() {
         supportActionBar?.title = "EasyQuiz"
 
         fun show() {
-            val texts = Quiz
+            val quizes = quizTexts(this)
+
         }
 
     }

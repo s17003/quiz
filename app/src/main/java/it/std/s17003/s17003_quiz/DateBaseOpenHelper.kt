@@ -40,6 +40,7 @@ class DataBaseOpenHelper(context: Context?)
             val id = cursor.getInt(cursor.getColumnIndex("_id"))
             val pattern = cursor.getInt(cursor.getColumnIndex("pattern"))
             val degree = cursor.getInt(cursor.getColumnIndex("degree"))
+            val filename = cursor.getString(cursor.getColumnIndex("filename"))
             val question = cursor.getString(cursor.getColumnIndex("question"))
             val select1 = cursor.getString(cursor.getColumnIndex("select1"))
             val select2 = cursor.getString(cursor.getColumnIndex("select2"))
@@ -47,9 +48,11 @@ class DataBaseOpenHelper(context: Context?)
             val select4 = cursor.getString(cursor.getColumnIndex("select4"))
             val commentary = cursor.getString(cursor.getColumnIndex("commentary"))
 
-            quizes.add(Quiz(id, pattern, degree, question, select1, select2, select3, select4, commentary))
-
+            quizes.add(Quiz(id, pattern, degree, filename, question, select1, select2, select3, select4, commentary))
         }
+
+        database.close()
+        return quizes
     }
 
     fun insertQuiz(context: Context, quiz: List<Quiz>) {
