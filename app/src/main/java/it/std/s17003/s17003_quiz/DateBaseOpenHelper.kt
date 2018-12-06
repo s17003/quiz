@@ -91,7 +91,7 @@ class CsvReader {
         val assetManager = context.resources.assets
         try {
             // CSVファイルの読み込み
-            val inputStream = assetManager.open("s17003_quiz.csv")
+            val inputStream = assetManager.open("s17003.csv")
             val inputStreamReader = InputStreamReader(inputStream)
             val bufferReader = BufferedReader(inputStreamReader)
             var line: String
