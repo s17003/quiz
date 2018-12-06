@@ -13,6 +13,11 @@ class EasyQuiz : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "EasyQuiz"
+
+        fun show() {
+            val texts = Quiz
+        }
+
     }
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
